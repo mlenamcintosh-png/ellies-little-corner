@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>My Little Room ♡</title>
+
+    <link
+        rel="stylesheet"
+        href="room.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header class="room-header">
+
+        <a
+            href="index.html"
+            class="back-button"
+        >
+            ← Back Home
+        </a>
+
+
+        <div class="room-title">
+
+            <span>🎀</span>
+
+            <div>
+
+                <h1>
+                    My Little Room
+                </h1>
+
+                <p>
+                    design your own little space ♡
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="header-actions">
+
+            <button
+                id="save-room"
+                class="header-button"
+            >
+                💾 Save
+            </button>
+
+            <button
+                id="clear-room"
+                class="header-button"
+            >
+                🧹 Clear
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- MAIN DESIGNER -->
+
+    <main class="designer-layout">
+
+
+        <!-- LEFT SIDEBAR -->
+
+        <aside class="sidebar">
+
+
+            <!-- THEMES -->
+
+            <section class="panel">
+
+                <div class="panel-heading">
+
+                    <span>🎨</span>
+
+                    <h2>
+                        Room Theme
+                    </h2>
+
+                </div>
+
+
+                <div
+                    id="theme-list"
+                    class="theme-list"
+                >
+
+                    <button
+                        class="theme-button active"
+                        data-theme="pink"
+                    >
+                        🌸 Pink
+                    </button>
+
+
+                    <button
+                        class="theme-button"
+                        data-theme="kawaii"
+                    >
+                        🧸 Kawaii
+                    </button>
+
+
+                    <button
+                        class="theme-button"
+                        data-theme="cottage"
+                    >
+                        🌿 Cottage
+                    </button>
+
+
+                    <button
+                        class="theme-button"
+                        data-theme="fairy"
+                    >
+                        🧚 Fairy
+                    </button>
+
+
+                    <button
+                        class="theme-button"
+                        data-theme="y2k"
+                    >
+                        💿 Y2K
+                    </button>
+
+
+                    <button
+                        class="theme-button"
+                        data-theme="gothic"
+                    >
+                        🖤 Gothic
+                    </button>
+
+
+                    <button
+                        class="theme-button"
+                        data-theme="cozy"
+                    >
+                        🧸 Cozy
+                    </button>
+
+
+                    <button
+                        class="theme-button"
+                        data-theme="academia"
+                    >
+                        📚 Academia
+                    </button>
+
+
+                    <button
+                        class="theme-button"
+                        data-theme="minimal"
+                    >
+                        🤍 Minimal
+                    </button>
+
+
+                    <button
+                        class="theme-button"
+                        data-theme="garden"
+                    >
+                        🌷 Garden
+                    </button>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- FURNITURE -->
+
+            <section class="panel">
+
+                <div class="panel-heading">
+
+                    <span>🛋️</span>
+
+                    <h2>
+                        Furniture
+                    </h2>
+
+                </div>
+
+
+                <div class="category-list">
+
+
+                    <button
+                        class="category-button active"
+                        data-category="beds"
+                    >
+                        🛏️ Beds
+                    </button>
+
+
+                    <button
+                        class="category-button"
+                        data-category="desks"
+                    >
+                        🖥️ Desks
+                    </button>
+
+
+                    <button
+                        class="category-button"
+                        data-category="chairs"
+                    >
+                        🪑 Chairs
+                    </button>
+
+
+                    <button
+                        class="category-button"
+                        data-category="sofas"
+                    >
+                        🛋️ Sofas
+                    </button>
+
+
+                    <button
+                        class="category-button"
+                        data-category="dressers"
+                    >
+                        🗄️ Dressers
+                    </button>
+
+
+                    <button
+                        class="category-button"
+                        data-category="shelves"
+                    >
+                        📚 Shelves
+                    </button>
+
+
+                    <button
+                        class="category-button"
+                        data-category="tables"
+                    >
+                        🪴 Tables
+                    </button>
+
+
+                    <button
+                        class="category-button"
+                        data-category="nightstands"
+                    >
+                        🛏️ Nightstands
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="item-list"
+                    class="item-list"
+                ></div>
+
+            </section>
+
+
+
+            <!-- DECORATIONS -->
+
+            <section class="panel">
+
+                <div class="panel-heading">
+
+                    <span>🌸</span>
+
+                    <h2>
+                        Decorations
+                    </h2>
+
+                </div>
+
+
+                <div class="category-list">
+
+
+                    <button
+                        class="category-button"
+                        data-category="plants"
+                    >
+                        🌱 Plants
+                    </button>
+
+
+                    <button
+                        class="category-button"
+                        data-category="plushies"
+                    >
+                        🧸 Plushies
+                    </button>
+
+
+                    <button
+                        class="category-button"
+                        data-category="lamps"
+                    >
+                        🛋️ Lamps
+                    </button>
+
+
+                    <button
+                        class="category-button"
+                        data-category="rugs"
+                    >
+                        🧶 Rugs
+                    </button>
+
+
+                    <button
+                        class="category-button"
+                        data-category="wall"
+                    >
+                        🖼️ Wall Decor
+                    </button>
+
+                </div>
+
+            </section>
+
+
+        </aside>
+
+
+
+        <!-- ROOM -->
+
+        <section class="room-area">
+
+
+            <div class="room-tools">
+
+                <span>
+                    Click an item to select it ♡
+                </span>
+
+                <span id="room-status">
+                    Ready!
+                </span>
+
+            </div>
+
+
+            <div
+                id="room"
+                class="room room-pink"
+            >
+
+
+                <!-- WALL -->
+
+                <div class="room-wall">
+
+                    <div class="window">
+
+                        ☁️
+
+                    </div>
+
+                </div>
+
+
+                <!-- FLOOR -->
+
+                <div class="room-floor"></div>
+
+
+                <!-- ITEMS GO HERE -->
+
+                <div
+                    id="room-items"
+                    class="room-items"
+                ></div>
+
+
+            </div>
+
+
+
+            <!-- SELECTED ITEM CONTROLS -->
+
+            <div
+                id="item-controls"
+                class="item-controls hidden"
+            >
+
+                <div class="selected-name">
+                    Nothing selected
+                </div>
+
+
+                <div class="control-buttons">
+
+                    <button id="move-front">
+                        ⬆️ Front
+                    </button>
+
+                    <button id="move-back">
+                        ⬇️ Back
+                    </button>
+
+                    <button id="rotate-left">
+                        ↶ Rotate
+                    </button>
+
+                    <button id="rotate-right">
+                        ↷ Rotate
+                    </button>
+
+                    <button id="make-smaller">
+                        − Smaller
+                    </button>
+
+                    <button id="make-bigger">
+                        ＋ Bigger
+                    </button>
+
+                    <button
+                        id="delete-item"
+                        class="delete-button"
+                    >
+                        🗑️ Delete
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <script src="room.js"></script>
+
+</body>
+
+</html>
